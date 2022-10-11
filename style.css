@@ -59,3 +59,12 @@ span{
     width: 90%;
     height: 200px;
 }
+footer{
+    background-color:lightpink;
+    padding: 20px;
+}
+footer>adress>a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20%;
+}
