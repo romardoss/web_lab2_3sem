@@ -10,9 +10,8 @@ header{
     height: 60px;
     background-color: antiquewhite;
     margin-bottom: 7px;
-}
-a{
-    width: 30%;
+    border-bottom: solid 1px;
+    border-color:burlywood; 
 }
 span{
     display: inline-block;
@@ -20,7 +19,9 @@ span{
     width: 33.1%;
     height: 100%;
     text-align: center;
-    padding-top: 20px;
+    font-size: 20px;
+    padding-top: 18px;
     background-color: antiquewhite;
     border-left: solid 1px;
+    border-color:burlywood
 }
