@@ -1,0 +1,26 @@
+*{
+    margin:0;
+}
+h2{
+    text-align: center;
+    background-color:burlywood;
+    padding: 20px;
+}
+header{
+    height: 60px;
+    background-color: antiquewhite;
+    margin-bottom: 7px;
+}
+a{
+    width: 30%;
+}
+span{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33.1%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    background-color: antiquewhite;
+    border-left: solid 1px;
+}
