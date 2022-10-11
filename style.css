@@ -44,5 +44,12 @@ span{
     width: 100%;
     margin: 0;
     padding: 0;
-
+}
+.login{
+    background-color:wheat ;
+    border: solid 1px;
+    border-color: burlywood;
+}
+.login>input{
+    position: center;
 }
