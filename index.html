@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Вареники ♥</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,5 +23,53 @@
         </span>
     </header>
 
+    <form class="registration">
+        <legend>Реєстрація у товариство любителів вареників</legend>
+        <span>
+            <label for="name">Твоє ім'я</label><br>
+            <input type="text" id="name" name="name" placeholder="Вареник"><br><br>
+            <label for="last-name">Твоє прізвище</label><br>
+            <input type="text" id="last-name" name="last-name" placeholder="Зі сметаною"><br><br>
+            <label for="sex">Стать</label><br>
+            <input type="radio" name="sex" id="male" value="Чоловіча">
+            <label for="male">Чоловіча</label>
+            <input type="radio" name="sex" id="female" value="Жіноча">
+            <label for="female">Жіноча</label><br><br>
+            <label for="age">Вік</label>
+            <input type="number" id="age" name="age" min="3" max="99" placeholder="Не скажу :)" class="age"><br><br>
+            <label for="birthday">Дата народження</label>
+            <input type="date" if="birthday" name="birthday" min="1923-01-01"><br><br>
+        </span>
+        <span>
+            <label for="country">Країна проживання</label><br>
+            <select id="country">
+                <option value="ukraine">Україна</option>
+                <option value="poland">Польща</option>
+                <option value="canada">Канада</option>
+                <option value="use">США</option>
+                <option value="britain">Британія</option>
+                <option value="germany">Німеччина</option>
+            </select><br><br>
+            <label for="tel">Номер телефону</label><br>
+            <input type="tel" id="tel" name="tel" placeholder="096-123-45-67"><br><br>
+            <label for="social">Соцмережа</label><br>
+            <input type="url" id="social" name="social" placeholder="Посилання на аккаунт"><br><br>
+            <label for="email">Електронна пошта</label><br>
+            <input type="email" id="email" name="email" placeholder="vareniki@gmail.com"><br><br>
+            <label>Пароль</label><br>
+            <input type="password" id="password" name="password" placeholder="Vareniki123"><br><br>
+            <input type="checkbox" id="like" name="like">
+            <label for="like">Підтверджую, що люблю вареники</label><br>
+            <label></label>
+        </span>
+        <span class="full-space">
+            <label for="count">В день з'їдаю стільки вареників: 0</label>
+            <input type="range" id="count" name="count" min="0" max="100">
+            <label for="count">100</label><br>
+            <input type="submit" onclick="alert('Ласкаво просимо до товариства!')" value="Підтвердити реєстрацію">
+            <input type="reset" value="Скинути все">
+        </span>
+
+    </form>
 </body>
 </html>
