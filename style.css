@@ -39,17 +39,23 @@ span{
     width: 90px;
 }
 .full-space{
-    display: block;
-    position: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 .login{
     background-color:wheat ;
     border: solid 1px;
     border-color: burlywood;
+    text-align: center;
 }
-.login>input{
-    position: center;
+.feedback{
+    background-color:bisque;
+    border: solid 1px;
+    border-color: burlywood;
+}
+.feedback>span{
+    width: 49%;
+}
+.message{
+    width: 90%;
+    height: 200px;
 }
