@@ -56,9 +56,9 @@
         <legend>Реєстрація у товариство любителів вареників</legend>
         <span>
             <label for="name">Твоє ім'я</label><br>
-            <input type="text" id="name" name="name" placeholder="Вареник"><br><br>
+            <input type="text" id="name" name="name" placeholder="Вареник" required><br><br>
             <label for="last-name">Твоє прізвище</label><br>
-            <input type="text" id="last-name" name="last-name" placeholder="Зі сметаною"><br><br>
+            <input type="text" id="last-name" name="last-name" placeholder="Зі сметаною" required><br><br>
             <label for="sex">Стать</label><br>
             <input type="radio" name="sex" id="male" value="Чоловіча">
             <label for="male">Чоловіча</label>
@@ -80,14 +80,18 @@
                 <option value="germany">Німеччина</option>
             </select><br><br>
             <label for="tel">Номер телефону</label><br>
-            <input type="tel" id="tel" name="tel" placeholder="096-123-45-67"><br><br>
+            <input type="tel" id="tel" name="tel" placeholder="096-123-45-67" 
+            pattern="[0-9]{10}" required><br><br>
             <label for="social">Соцмережа</label><br>
             <input type="url" id="social" name="social" placeholder="Посилання на аккаунт"><br><br>
             <label for="email">Електронна пошта</label><br>
-            <input type="email" id="email" name="email" placeholder="varenyki@gmail.com"><br><br>
+            <input type="email" id="email" name="email" placeholder="varenyki@gmail.com" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
             <label>Пароль</label><br>
-            <input type="password" id="password" name="password" placeholder="Varenyki123"><br><br>
-            <input type="checkbox" id="like" name="like">
+            <input type="password" id="password" name="password" placeholder="Varenyki123"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Обов'язково хоч одне число, велику та малу літеру, мінімум 8 символів, англійською мовою" required><br><br>
+            <input type="checkbox" id="like" name="like" required>
             <label for="like">Підтверджую, що люблю вареники</label><br>
             <label></label>
         </span>
@@ -96,7 +100,7 @@
             <label for="count">В день з'їдаю стільки вареників: 0</label>
             <input type="range" id="count" name="count" min="0" max="100">
             <label for="count">100</label><br><br>
-            <input type="submit" onclick="alert('Ласкаво просимо до товариства!')" value="Підтвердити реєстрацію">
+            <input type="submit" value="Підтвердити реєстрацію">
             <input type="reset" value="Скинути все">
         </div>
     </form>
@@ -104,17 +108,21 @@
     <form class="login" id="login">
         <legend>Вхід в товариство</legend>
         <div>
-            <input class="log" type="text" placeholder="Логін"><br><br>
-            <input class="log" type="password" placeholder="Пароль"><br><br>
-            <input class="log" type="submit" onclick="alert('Смачного!')" value="Вхід"><br>
+            <input class="log" type="text" placeholder="Логін" required><br><br>
+            <input class="log" type="password" placeholder="Пароль" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Обов'язково хоч одне число, велику та малу літеру, мінімум 8 символів, англійською мовою"
+            required><br><br>
+            <input class="log" type="submit" value="Вхід"><br>
         </div>
     </form>
 
     <form class="feedback" id="feedback">
         <legend>Зв'яжися з нами</legend>
         <span>
-            <input class="fdbk" type="text" placeholder="Ім'я"><br><br><br>
-            <input class="fdbk" type="email" placeholder="Електронна пошта"><br><br><br>
+            <input class="fdbk" type="text" placeholder="Ім'я" required><br><br><br>
+            <input class="fdbk" type="email" placeholder="Електронна пошта" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br><br>
             <select class="fdbk" aria-placeholder="Тема повідомлення">
                 <option>Без теми</option>
                 <option>Хочу їсти</option>
@@ -123,10 +131,10 @@
                 <option>Пропоную зустрітися поїсти разом</option>
                 <option>Історія створення вареника</option>
             </select> <br><br><br>
-            <input class="fdbk" type="submit" onclick="alert('Ми зв\'яжемося з тобою')" value="Відправити"><br>
+            <input class="fdbk" type="submit" value="Відправити"><br>
         </span>
         <span>
-            <textarea name="message" cols="40" rows="18" placeholder="Повідомлення"></textarea>
+            <textarea name="message" cols="40" rows="18" placeholder="Повідомлення" minlength="10"></textarea>
         </span>
     </form>
 
