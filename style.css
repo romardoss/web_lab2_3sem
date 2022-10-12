@@ -3,6 +3,9 @@
     /*font-family: 'Times New Roman', Times, serif;*/
     font-family: Georgia, serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 h2{
     text-align: center;
     background-color:burlywood;
